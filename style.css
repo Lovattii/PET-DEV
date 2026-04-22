@@ -7,10 +7,6 @@ a {
   text-decoration: none;
 }
 
-body {
-    margin: 0;
-}
-
 /* LINHA STICKY DE TITULO - MENU */
 
 .topo {
@@ -23,6 +19,8 @@ body {
   position:sticky;
   top: 0;
   align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur;
 }
 
 .titulo {
@@ -72,6 +70,7 @@ body {
   margin: 40px auto;
   overflow: hidden;
   position: relative; 
+  z-index: 1;
 }
 
 .deslizo {
