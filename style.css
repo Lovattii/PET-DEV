@@ -143,14 +143,22 @@ a {
 }
 
 .cont-titulo {
-  margin-bottom: 30px;
+  text-align: center;
+  background: white;
+  margin-bottom: 18px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
 }
 
 .descricao {
-  width: 90%;
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  background: white;
+  max-width: 1050px;
+  margin: 20px auto;
+  padding: 20px 25px;
+
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+  position: relative;
   font-size: 18px;
-  flex-direction: column;
 }

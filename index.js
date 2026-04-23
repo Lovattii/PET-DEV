@@ -16,5 +16,18 @@ function slideAnterior() {
   mostrarSlide();
 }
 
+/* PASSAGEM DE SLIDES COM BOTÕES */
 document.querySelector(".prox").onclick = proximoSlide;
 document.querySelector(".anterior").onclick = slideAnterior;
+
+/* AUTOPLAY DE SLIDES APÓS INTERVALO | TRAVA COM MOUSE */
+
+let autoplay = setInterval(proximoSlide, 3000);
+
+wrapper.addEventListener("mouseenter", () => {
+  clearInterval(autoplay);
+});
+
+wrapper.addEventListener("mouseleave", () => {
+  autoplay = setInterval(proximoSlide, 3000);
+});
