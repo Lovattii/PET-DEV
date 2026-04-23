@@ -11,5 +11,10 @@ function proximoSlide() {
   mostrarSlide();
 }
 
-mostrarSlide();
-setInterval(proximoSlide, 5000);
+function slideAnterior() {
+  index = (index - 1 + slides.length) % slides.length;
+  mostrarSlide();
+}
+
+document.querySelector(".prox").onclick = proximoSlide;
+document.querySelector(".anterior").onclick = slideAnterior;
